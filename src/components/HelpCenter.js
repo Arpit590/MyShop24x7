@@ -61,7 +61,7 @@ const HelpCenter = () => {
                 height={'30'}
                 width={'30'}
                 />
-                <Text style={styles.mail}>Saxenaarpit52@gmail.com</Text>
+                <Text style={styles.mail}>myshop24x7@gmail.com</Text>
             </View>
         </View>
       </View>

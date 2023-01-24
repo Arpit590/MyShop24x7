@@ -66,13 +66,17 @@ const ProfileScreen = () => {
                         width={'100'}
                         />
                     </TouchableOpacity>
-                    <Text style={styles.profileText}>Arpit Saxena</Text>
+                    <Text style={styles.profileText}>Test User</Text>
                 </View>
                 <View style={styles.options}>
-                    <TouchableOpacity activeOpacity={0.8} style={styles.option}>
+                    <TouchableOpacity 
+                    onPress={()=>navigation.navigate("Custom")}
+                    activeOpacity={0.8} style={styles.option}>
                         <Text style={styles.optionText}>Home</Text>
                     </TouchableOpacity>
-                    <TouchableOpacity activeOpacity={0.8} style={styles.option}>
+                    <TouchableOpacity 
+                    onPress={()=>navigation.navigate("HelpCenter")}
+                    activeOpacity={0.8} style={styles.option}>
                         <Text style={styles.optionText}>Help Center</Text>
                     </TouchableOpacity>
                     <TouchableOpacity activeOpacity={0.8} style={styles.option}>
@@ -87,7 +91,8 @@ const ProfileScreen = () => {
                     width={'40'}
                     />
                 </TouchableOpacity>
-                <TouchableOpacity activeOpacity={0.8} style={styles.social}>
+                <TouchableOpacity
+                 activeOpacity={0.8} style={styles.social}>
                     <InstagramIcon
                     height={'35'}
                     width={'35'}
@@ -139,7 +144,7 @@ const ProfileScreen = () => {
             />
           </View>
         </View>
-        <Text style={styles.profileText1}>Arpit Saxena</Text>
+        <Text style={styles.profileText1}>Test User</Text>
         <View style={styles.profileOptions}>
             <View style={styles.profileOption}>
                 <View style={{flexDirection:"row", alignItems:"center"}}>

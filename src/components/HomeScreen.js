@@ -110,13 +110,17 @@ const HomeScreen = () => {
                         width={'100'}
                         />
                     </TouchableOpacity>
-                    <Text style={styles.profileText}>Arpit Saxena</Text>
+                    <Text style={styles.profileText}>Test User</Text>
                 </View>
                 <View style={styles.options}>
-                    <TouchableOpacity activeOpacity={0.8} style={styles.option}>
+                    <TouchableOpacity 
+                    onPress={()=>navigation.navigate("Custom")}
+                    activeOpacity={0.8} style={styles.option}>
                         <Text style={styles.optionText}>Home</Text>
                     </TouchableOpacity>
-                    <TouchableOpacity activeOpacity={0.8} style={styles.option}>
+                    <TouchableOpacity 
+                    onPress={()=>navigation.navigate("HelpCenter")}
+                    activeOpacity={0.8} style={styles.option}>
                         <Text style={styles.optionText}>Help Center</Text>
                     </TouchableOpacity>
                     <TouchableOpacity activeOpacity={0.8} style={styles.option}>
