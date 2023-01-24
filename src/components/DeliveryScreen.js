@@ -236,6 +236,8 @@ const styles = StyleSheet.create({
         borderColor:"black",
         borderRadius:10,
         padding:10,
+        fontSize:15,
+        color:"black"
     },
     payment:{
         backgroundColor:"white",
